@@ -30,6 +30,7 @@ def Words_counter(file_name, n):
         # Show the N most common words
         for i, (word, count) in enumerate(most_common_words[:N], 1):
             print(f"{i} - word \"{word}\" {count} times")
+        sys.exit(1)    
     except FileNotFoundError:
         print(f"File {file_name} not found.")
         sys.exit(1)
