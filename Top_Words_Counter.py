@@ -23,7 +23,6 @@ def Words_counter(file_name, n):
             print(f"{i} - word \"{word}\" {count} times")
     except FileNotFoundError:
         print(f"File {file_name} not found.")
-        sys.exit(1)
 
 if __name__ == "__main__":
     # Get the value N from the user
